@@ -21,7 +21,7 @@ Natural regeneration is turned OFF. This means you can only heal using golden ap
 **God Apples**
 When you kill another player they will drop a player head. You can use this in place of the apple to craft a enchanted golden apple, this item is very powerful and will heal you to full HP.
 Crafting Recipe:
-<img src="https://i.imgur.com/C18hZRj.png" height="256">
+<img src="https://i.imgur.com/zacjTnz.png" height="256">
 
 **Fast Smelting**
 Iron ore, gold ore and meat will smelt 10x faster in a furnace. This helps to speed up boring gameplay and allows players to focus on the more interesting aspects.
