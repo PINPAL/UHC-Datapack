@@ -4,7 +4,7 @@ scoreboard players set GameStarted UHC 0
 scoreboard players set Red PlayerCount 0
 scoreboard players set Blue PlayerCount 0
 scoreboard players set Green PlayerCount 0
-scoreboard players set Orange PlayerCount 0
+scoreboard players set Yellow PlayerCount 0
 # Lobby Setup
 clear @a
 gamemode adventure @a

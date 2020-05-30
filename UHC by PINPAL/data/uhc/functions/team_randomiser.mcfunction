@@ -21,13 +21,13 @@ team join Green @r[tag=Unteamed]
 tag @a[team=Green] remove Unteamed
 team join Green @r[tag=Unteamed]
 tag @a[team=Green] remove Unteamed
-# Join Orange
-team join Orange @r[tag=Unteamed]
-tag @a[team=Orange] remove Unteamed
-team join Orange @r[tag=Unteamed]
-tag @a[team=Orange] remove Unteamed
+# Join Yellow
+team join Yellow @r[tag=Unteamed]
+tag @a[team=Yellow] remove Unteamed
+team join Yellow @r[tag=Unteamed]
+tag @a[team=Yellow] remove Unteamed
 # Store Result
 execute store result score Red PlayerCount run team list Red
 execute store result score Blue PlayerCount run team list Blue
 execute store result score Green PlayerCount run team list Green
-execute store result score Orange PlayerCount run team list Orange
+execute store result score Yellow PlayerCount run team list Yellow

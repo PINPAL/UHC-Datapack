@@ -1,7 +1,7 @@
 # Center Screen Title
 title @a times 20 200 20
 title @a subtitle {"text":"1 Hour has begun!"}
-title @a title {"text":"UHC has begun!","bold":true,"color":"red"}
+title @a title {"text":"UHC has begun!","bold":true,"color":"light_purple"}
 # Start Game
 scoreboard players set GameStarted UHC 1
 # Setup Players

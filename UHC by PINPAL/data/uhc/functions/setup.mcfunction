@@ -43,6 +43,6 @@ team modify Blue friendlyFire false
 team add Green
 team modify Green color green
 team modify Green friendlyFire false
-team add Orange
-team modify Orange color gold
-team modify Orange friendlyFire false
+team add Yellow
+team modify Yellow color yellow
+team modify Yellow friendlyFire false
