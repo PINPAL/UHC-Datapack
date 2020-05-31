@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "text": "Metal Forging",
+            "color": "green"
+        },
+        "description": {
+            "text": "Craft an anvil"
+        },
+        "icon": {
+            "item": "minecraft:anvil"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "anvil": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:anvil"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "uhc:root"
+}

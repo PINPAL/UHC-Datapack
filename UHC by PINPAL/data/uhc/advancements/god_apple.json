@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "text": "Devourer of Souls",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Kill an enemy, craft their head into a Enchanted Golden Apple and then eat it"
+        },
+        "icon": {
+            "item": "minecraft:enchanted_golden_apple"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "apple": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:enchanted_golden_apple"
+                }
+            }
+        }
+    },
+    "parent": "uhc:root"
+}

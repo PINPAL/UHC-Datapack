@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "text": "Not so Hardcore",
+            "color": "green"
+        },
+        "description": {
+            "text": "Drink a regeneration potion"
+        },
+        "icon": {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:regeneration\"}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "regeneration3": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:potion",
+                    "potion": "minecraft:strong_regeneration"
+                }
+            }
+        }
+    },
+    "parent": "uhc:root"
+}

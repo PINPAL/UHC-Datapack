@@ -1,29 +1,27 @@
 {
     "display": {
         "title": {
-            "text": "Devourer of Souls",
-            "color": "dark_purple"
+            "text": "Ultra Hardcore",
+            "color": "white",
+            "bold": false,
+            "italic": false,
+            "strikethrough": false
         },
         "description": {
-            "text": "Kill an enemy, craft their head into a Enchanted Golden Apple and then eat it."
+            "text": "UHC Gamemode Specific Advancements"
         },
         "icon": {
-            "item": "minecraft:enchanted_golden_apple"
+            "item": "minecraft:golden_apple"
         },
-        "frame": "challenge",
-        "show_toast": true,
-        "announce_to_chat": true,
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
         "hidden": false,
         "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
     },
     "criteria": {
-        "Eat Apple": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "item": "minecraft:enchanted_golden_apple"
-                }
-            }
+        "unobtainable": {
+            "trigger": "minecraft:tick"
         }
     }
 }
