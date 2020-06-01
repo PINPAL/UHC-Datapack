@@ -46,3 +46,12 @@ team modify Green friendlyFire false
 team add Yellow
 team modify Yellow color yellow
 team modify Yellow friendlyFire false
+# Setup Direction Indicator
+bossbar add uhc:north "North"
+bossbar add uhc:north_east "North East"
+bossbar add uhc:east "East"
+bossbar add uhc:south_east "South East"
+bossbar add uhc:south "South"
+bossbar add uhc:south_west "South West"
+bossbar add uhc:west "West"
+bossbar add uhc:north_west "North West"
