@@ -1,14 +1,14 @@
 {
     "display": {
         "title": {
-            "text": "First Blood",
+            "text": "Mining in Diamond",
             "color": "green"
         },
         "description": {
-            "text": "Kill your first player"
+            "text": "Craft an Diamond Pickaxe"
         },
         "icon": {
-            "item": "minecraft:iron_sword"
+            "item": "minecraft:diamond_pickaxe"
         },
         "frame": "task",
         "show_toast": true,
@@ -16,12 +16,14 @@
         "hidden": false
     },
     "criteria": {
-        "kill": {
-            "trigger": "minecraft:player_killed_entity",
+        "anvil": {
+            "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "entity": {
-                    "type": "minecraft:player"
-                }
+                "items": [
+                    {
+                        "item": "minecraft:diamond_pickaxe"
+                    }
+                ]
             }
         }
     },

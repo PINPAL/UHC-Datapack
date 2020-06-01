@@ -1,7 +1,7 @@
 # Center Screen Title
 title @a times 20 200 20
-title @a subtitle {"text":"1 Hour has begun!"}
-title @a title {"text":"UHC has begun!","bold":true,"color":"light_purple"}
+title @a subtitle {"text":"1 Hour 30 Mins has begun!","color":"gray"}
+title @a title {"text":"UHC has begun!","bold":true,"color":"white"}
 # Start Game
 scoreboard players set GameStarted UHC 1
 # Setup Players
@@ -16,4 +16,4 @@ effect give @a minecraft:resistance 30 10 true
 # Spread Players
 spreadplayers 0 0 900 1200 true @a
 # World Border Shrinking
-worldborder set 10 3600
+worldborder set 10 5400

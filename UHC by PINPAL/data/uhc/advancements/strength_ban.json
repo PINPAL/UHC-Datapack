@@ -1,0 +1,65 @@
+{
+    "display": {
+        "title": {
+            "text": "Strength Potions are not Allowed",
+            "color": "red",
+            "bold":"true"
+        },
+        "description": {
+            "text": "Strength Potions are NOT allowed. Items have been removed."
+        },
+        "icon": {
+            "item": "minecraft:potion"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "strength": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:potion",
+                        "potion": "minecraft:strength"
+                    }
+                ]
+            }
+        },
+        "long_strength": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:potion",
+                        "potion": "minecraft:long_strength"
+                    }
+                ]
+            }
+        },
+        "strong_strength": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:potion",
+                        "potion": "minecraft:strong_strength"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "strength",
+            "long_strength",
+            "strong_strength"
+        ]
+    ],
+    "rewards": {
+        "function": "uhc:remove_strength/schedule"
+    },
+    "parent": "uhc:root"
+}
