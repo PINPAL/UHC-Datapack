@@ -46,20 +46,8 @@ team modify Green friendlyFire false
 team add Yellow
 team modify Yellow color yellow
 team modify Yellow friendlyFire false
-# Setup Direction Indicator
-bossbar add uhc:north "North"
-bossbar set uhc:north style notched_6
-bossbar add uhc:north_east "North East"
-bossbar set uhc:north_east style notched_6
-bossbar add uhc:east "East"
-bossbar set uhc:east style notched_6
-bossbar add uhc:south_east "South East"
-bossbar set uhc:south_east style notched_6
-bossbar add uhc:south "South"
-bossbar set uhc:south style notched_6
-bossbar add uhc:south_west "South West"
-bossbar set uhc:south_west style notched_6
-bossbar add uhc:west "West"
-bossbar set uhc:west style notched_6
-bossbar add uhc:north_west "North West"
-bossbar set uhc:north_west style notched_6
+# Setup Coordinates Indicator
+scoreboard objectives add coords_r dummy
+scoreboard objectives add coords_x dummy
+scoreboard objectives add coords_y dummy
+scoreboard objectives add coords_z dummy

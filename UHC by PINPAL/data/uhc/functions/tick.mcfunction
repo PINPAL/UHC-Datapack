@@ -19,7 +19,7 @@ execute if score GameStarted UHC >= One UHC run execute if score Green PlayerCou
 clear @a minecraft:potion{Potion:"minecraft:strength"}
 clear @a minecraft:potion{Potion:"minecraft:long_strength"}
 clear @a minecraft:potion{Potion:"minecraft:strong_strength"}
-# Direction Indicator
+# Get Facing
 tag @a remove south
 tag @a remove south_east
 tag @a remove south_west
@@ -38,11 +38,18 @@ tag @a[y_rotation=-112.5..-67.5] add east
 tag @a[y_rotation=-157.5..-112.5] add north_east
 tag @a[y_rotation=-180..-157.5] add north
 tag @a[y_rotation=157.5..180] add north
-bossbar set uhc:north players @a[tag=north]
-bossbar set uhc:north_east players @a[tag=north_east]
-bossbar set uhc:east players @a[tag=east]
-bossbar set uhc:south_east players @a[tag=south_east]
-bossbar set uhc:south players @a[tag=south]
-bossbar set uhc:south_west players @a[tag=south_west]
-bossbar set uhc:west players @a[tag=west]
-bossbar set uhc:north_west players @a[tag=north_west]
+# Get Direction
+execute as @a at @s run execute store result score @s coords_r run data get entity @s Rotation[0]
+# Get Coordinates
+execute as @a at @s run execute store result score @s coords_x run data get entity @s Pos[0]
+execute as @a at @s run execute store result score @s coords_y run data get entity @s Pos[1]
+execute as @a at @s run execute store result score @s coords_z run data get entity @s Pos[2]
+# Display Rotation and Coordinates
+execute as @a at @s run execute if entity @s[tag=north] run title @s actionbar [{"text":"Direction: ","color":"gray","bold":"true"},{"color":"white","text":"N  ","bold":"false"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_r"}},{"color":"white","text":"° "},{"text":"XYZ: ","color":"gray"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_x"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_y"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_z"}}]
+execute as @a at @s run execute if entity @s[tag=north_east] run title @s actionbar [{"text":"Direction: ","color":"gray","bold":"true"},{"color":"white","text":"NE ","bold":"false"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_r"}},{"color":"white","text":"° "},{"text":"XYZ: ","color":"gray"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_x"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_y"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_z"}}]
+execute as @a at @s run execute if entity @s[tag=east] run title @s actionbar [{"text":"Direction: ","color":"gray","bold":"true"},{"color":"white","text":"E  ","bold":"false"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_r"}},{"color":"white","text":"° "},{"text":"XYZ: ","color":"gray"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_x"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_y"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_z"}}]
+execute as @a at @s run execute if entity @s[tag=south_east] run title @s actionbar [{"text":"Direction: ","color":"gray","bold":"true"},{"color":"white","text":"SE ","bold":"false"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_r"}},{"color":"white","text":"° "},{"text":"XYZ: ","color":"gray"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_x"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_y"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_z"}}]
+execute as @a at @s run execute if entity @s[tag=south] run title @s actionbar [{"text":"Direction: ","color":"gray","bold":"true"},{"color":"white","text":"S  ","bold":"false"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_r"}},{"color":"white","text":"° "},{"text":"XYZ: ","color":"gray"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_x"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_y"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_z"}}]
+execute as @a at @s run execute if entity @s[tag=south_west] run title @s actionbar [{"text":"Direction: ","color":"gray","bold":"true"},{"color":"white","text":"SW ","bold":"false"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_r"}},{"color":"white","text":"° "},{"text":"XYZ: ","color":"gray"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_x"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_y"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_z"}}]
+execute as @a at @s run execute if entity @s[tag=west] run title @s actionbar [{"text":"Direction: ","color":"gray","bold":"true"},{"color":"white","text":"W  ","bold":"false"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_r"}},{"color":"white","text":"° "},{"text":"XYZ: ","color":"gray"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_x"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_y"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_z"}}]
+execute as @a at @s run execute if entity @s[tag=north_west] run title @s actionbar [{"text":"Direction: ","color":"gray","bold":"true"},{"color":"white","text":"NW ","bold":"false"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_r"}},{"color":"white","text":"° "},{"text":"XYZ: ","color":"gray"},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_x"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_y"}},{"text":" "},{"color":"white","bold":"false","score":{"name":"@s","objective":"coords_z"}}]
