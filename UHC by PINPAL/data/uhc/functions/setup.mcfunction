@@ -8,9 +8,9 @@ scoreboard players set @a Deaths 0
 scoreboard objectives add Health health
 scoreboard objectives setdisplay list Health
 scoreboard objectives add Worldborder dummy
-scoreboard objectives setdisplay sidebar Worldborder
 scoreboard objectives add PlayerCount dummy
 scoreboard players reset @a
+scoreboard objectives setdisplay sidebar
 # Scoreboard Sidebar Visuals
 team add WorldborderColor
 team modify WorldborderColor color red
