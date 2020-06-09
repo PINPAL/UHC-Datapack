@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "text": "Extra Sharp",
+            "color": "green"
+        },
+        "description": {
+            "text": "Craft a Diamond Sword"
+        },
+        "icon": {
+            "item": "minecraft:diamond_sword"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "anvil": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond_sword"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "uhc:root"
+}
