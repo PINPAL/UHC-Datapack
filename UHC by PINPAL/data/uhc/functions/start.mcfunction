@@ -1,4 +1,4 @@
-function uhc:setup
+function uhc:z_backend/setup
 # Center Screen Title
 title @a times 20 200 20
 title @a subtitle {"text":"1 Hour 30 Mins has begun!","color":"gray"}

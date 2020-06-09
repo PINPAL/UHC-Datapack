@@ -11,10 +11,10 @@ tp @a[team=Yellow,gamemode=spectator] @a[team=Yellow,gamemode=survival,limit=1]
 # Anti-Ghosting Tooltip
 title @a[gamemode=spectator] actionbar [{"text":"> ","color":"gray"},{"text":"Press Left Click for First Person View","color":"white"},{"text":" <","color":"gray"}]
 # Announce Teams as dead
-execute if score GameStarted UHC >= One UHC run execute if score Red PlayerCount >= One UHC run execute unless entity @a[team=Red,scores={Deaths=0}] run function uhc:eliminated/red
-execute if score GameStarted UHC >= One UHC run execute if score Yellow PlayerCount >= One UHC run execute unless entity @a[team=Yellow,scores={Deaths=0}] run function uhc:eliminated/yellow
-execute if score GameStarted UHC >= One UHC run execute if score Blue PlayerCount >= One UHC run execute unless entity @a[team=Blue,scores={Deaths=0}] run function uhc:eliminated/blue
-execute if score GameStarted UHC >= One UHC run execute if score Green PlayerCount >= One UHC run execute unless entity @a[team=Green,scores={Deaths=0}] run function uhc:eliminated/green
+execute if score GameStarted UHC >= One UHC run execute if score Red PlayerCount >= One UHC run execute unless entity @a[team=Red,scores={Deaths=0}] run function uhc:z_backend/eliminated/red
+execute if score GameStarted UHC >= One UHC run execute if score Yellow PlayerCount >= One UHC run execute unless entity @a[team=Yellow,scores={Deaths=0}] run function uhc:z_backend/eliminated/yellow
+execute if score GameStarted UHC >= One UHC run execute if score Blue PlayerCount >= One UHC run execute unless entity @a[team=Blue,scores={Deaths=0}] run function uhc:z_backend/eliminated/blue
+execute if score GameStarted UHC >= One UHC run execute if score Green PlayerCount >= One UHC run execute unless entity @a[team=Green,scores={Deaths=0}] run function uhc:z_backend/eliminated/green
 # Ban Strength Potions
 clear @a minecraft:potion{Potion:"minecraft:strength"}
 clear @a minecraft:potion{Potion:"minecraft:long_strength"}

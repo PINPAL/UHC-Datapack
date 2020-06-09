@@ -30,4 +30,4 @@ title @a times 0 999999999 0
 title @a subtitle {"text":"Please Wait...","color":"gray"}
 title @a title {"text":"Game is starting...","color":"white"}
 # Assign Teams
-function uhc:team_randomiser
+function uhc:z_backend/team_randomiser

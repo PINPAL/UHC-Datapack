@@ -27,4 +27,4 @@ tag @a[team=Yellow] remove Unteamed
 team join Yellow @r[tag=Unteamed]
 tag @a[team=Yellow] remove Unteamed
 # Store Result
-function uhc:team_calculate
+function uhc:z_backend/team_calculate
